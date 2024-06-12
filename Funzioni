@@ -117,7 +117,7 @@ def cov(x,y,sy) :
 
 
 def Tstudent(x, y, sy) :
-  TstudentG = np.sum((np.absolute(x-y))/(sy))
+  TstudentG = (np.abs(x-y))/(sy)
   return TstudentG
 
 def err_pes(sx):
